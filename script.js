@@ -96,9 +96,13 @@ function showResults() {
     entries.forEach(entry => {
 
         // Grouping
-        const month = entry.type === 'plan'
-            ? entry.plannedMonths
-            : entry.actualMonths;
+        let month;
+
+        if (entry.type === 'plan') {
+        month = entry.plannedMonths;
+        } else {
+        month = entry.actualMonths;
+        }
 
         if (!group[month]) {
             group[month] = {

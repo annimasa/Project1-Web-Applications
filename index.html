@@ -1,0 +1,115 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget tracker</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <main class="container">
+        <h1>Budget tracker</h1>
+        <div id="selection"> <!-- Buttons to chooce plan or monitor budget mode-->
+            <button type="button" class="choice" id="plan-btn" onclick="showPlanMode()">Plan Budget</button>
+            <button type="button" class="choice" id="monitor-btn" onclick="showMonitorMode()">Monitor Budget</button>
+        </div>
+            <form id="budget-form" novalidate>
+            <div id="error-summary" class="visually-hidden" role="alert" aria-live="polite"></div>
+        <section id="budget-plan">
+            <!-- Budget planning area -->
+            <h2>Budget Plan</h2>
+                <!-- Select month for budgeting-->
+                <label for="plannedMonths">Select month:</label>
+                <select name="plannedMonths" id="plannedMonths" class="dropdown">
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                </select> <br> <br>
+                <!-- Set month's budgeted incomes-->
+                <label for="plannedIncome">Set month's incomes:</label>
+                <input type="number" id="plannedIncome" name="plannedIncome" required minlenght="1" autocomplete="plannedIncome" aria-describedby="plannedIncomeHelp"> 
+                <small id="plannedIncomeHelp" class="help">Enter your months's expected income</small>
+                <p class="error" id="plannedIncomeError"></p>
+                <br>
+                <!-- Select expense category-->
+                <label for="plannedCategories">Select budgeting category:</label>
+                <select name="plannedCategories" id="plannedCategories" class="dropdown">
+                    <option value="food">Food</option>
+                    <option value="housing">Housing</option>
+                    <option value="hobbies">Hobbies</option>
+                    <option value="other">Other</option>
+                </select>
+                <br> <br>
+                <!-- Set budget for category -->
+                <label for="budget">Set budget:</label>
+                <input type="number" id="budget" name="budget" required minlenght="1" autocomplete="budget" aria-describedby="budgetHelp"> 
+                <small id="budgetHelp" class="help">Enter month's budget for selected category</small>
+                <p class="error" id="budgetError"></p> <br>
+                <input type="text" id="hp1" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px;">
+                <!-- Buttons to save and clear the form-->
+                <button type="submit" class="btn" id="saveBudget">Save</button>
+                <button type="button" class="clear-btn" id="clearBudget">Clear</button>
+                <br>
+            </form>
+        </section>
+        <section id="budget-actual" novalidate>
+        <!-- Budget monitoring area--> 
+            <h2>Realized budget</h2>
+            <form id="monitor-form">
+                <!-- Select month for monitoring-->
+                <label for="actualMonths">Select month:</label>
+                <select name="actualMonths" id="actualMonths" class="dropdown">
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                </select> <br> <br>
+                <!-- Set month's actual incomes-->
+                <label for="actualIncome">Set month's incomes:</label>
+                <input type="number" id="actualIncome" name="actualIncome" required minlenght="1" autocomplete="actualIncome" aria-describedby="actualIncomeHelp"> 
+                <small id="actualIncomeHelp" class="help">Enter your months's actual income</small>
+                <p class="error" id="actualIncomeError"></p> <br>
+                <!-- Select expense category-->
+                <label for="actualCategories">Select category:</label>
+                <select name="actualCategories" id="actualCategories" class="dropdown">
+                    <option value="food">Food</option>
+                    <option value="housing">Housing</option>
+                    <option value="hobbies">Hobbies</option>
+                    <option value="other">Other</option>
+                </select> <br> <br>
+                <!-- Set expense for category -->
+                <label for="expense">Set expense:</label>
+                <input type="number" id="expense" name="expense" required minlength="1" autocomplete="expense" aria-describedby="expenseHelp">
+                <small id="expeseHelp" class="help">Enter expense for selected category</small>
+                <p class="error" id="expenseError"></p> <br>
+                <input type="text" id="hp2" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px;">
+                <button type="submit" class="btn" id="saveActual">Save</button>
+                <button type="button" class="clear-btn" id="clearActual">Clear</button>
+                <br>
+            </form>
+        </section>
+        <section id="results">
+            <!-- The form's results are shown here-->
+        </section>
+        <button type="button" class="visually-hidden" id="clearHistory">Clear history</button>
+    </main>
+    <script src="script.js"></script>
+ </body>
+ </html>

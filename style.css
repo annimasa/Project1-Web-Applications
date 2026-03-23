@@ -1,0 +1,169 @@
+:root {
+    --danger: #82172d;
+    --ok: #31855f;
+}
+* { box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: Geneva, Tahoma, Verdana, sans-serif; 
+   background: #f9f7fc;
+   color: black;
+   padding: 20px;
+   line-height: 1.5;
+   font-size: 1em;
+ }
+
+ h1 {
+  background-color: #dfd6e9cc;
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  font-size: 2em;
+  margin-bottom: 50px;
+ }
+.container { /* Main card container */
+   max-width: 800px;
+   margin: 0 auto;
+   background: white;
+   padding: 30px;
+   border-radius: 15px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+ }
+
+ /* Hide the forms before mode is selected */
+ #budget-plan {
+   display: none;
+ }
+ #budget-actual {
+   display: none;
+ }
+
+ /* Big choice buttons */
+.choice { 
+   font-size: 1.5em;
+   font-weight: bold;
+   background-color: #dfd6e9;
+   border-color: #3c324a;
+   border-radius: 12px;    
+   padding: 7px;
+   margin-right: 20px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+ }
+ .highlight {
+   background-color: #3c324a;
+   color: white;
+ }
+
+ .budget-plan, .budget-actual { /*Layout for budgeting forms */
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .btn { /* Save buttons */
+   float: right;
+   font-weight: bold;
+   background-color: #dfd6e9;
+   border-color: #3c324a;
+   border-radius: 12px;
+   padding: 5px;
+   margin: 7px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+ }
+
+ .clear-btn { /*Clear buttons */
+   float: right;
+   font-weight: bold;
+   color: white;
+   background-color: #3c324a;
+   border-color: #3c324a;
+   border-radius: 12px;
+   padding: 5px;
+   margin: 7px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+ }
+.btn:hover, .btn:active, .clear-btn:hover, .clear-btn:active, .choice:hover, .choice:active {
+   border-color: black;
+ }
+
+ input, button, .dropdown {
+   font: inherit;
+ }
+
+ input[type="number"] {
+   width: 100%;
+   padding: 7px 10px;
+ }
+
+ input:focus {
+   outline: 2px solid black;
+ }
+
+ input:invalid[aria-invalid="true"] {
+   border-color: var(--danger);
+ }
+
+ input:valid {
+   border-color: var(--ok);
+ }
+
+ .help {
+   color: #3c324a;
+ }
+
+ .dropdown {
+   padding: 7px 7px;
+ }
+
+ .visually-hidden { /* Hides error summary */
+    position: absolute; left: -9999px;
+} 
+
+#error-summary {
+   border-left: 6px solid var(--danger);
+   padding:  10px;
+   border-radius: 10px;
+   margin: 15px 0 10px;
+}
+
+#results {
+  margin-top: 20px;
+  padding: 15px;
+}
+
+#clearHistory {
+   font-weight: bold;
+   color: white;
+   background-color: #3c324a;
+   border-color: #3c324a;
+   border-radius: 12px;
+   padding: 5px;
+   margin: 7px;
+   margin-bottom: 10px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+@media (max-width:600px) {
+  .choice {
+    display: block;
+    font-size: 1.4em;
+  }
+
+  #plan-btn {
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  .btn, .clear-btn {
+    margin: 5px;
+  }
+}

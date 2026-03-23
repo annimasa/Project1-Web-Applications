@@ -136,7 +136,7 @@ function showResults() {
             groupedMonths.plan.forEach(entry => {
                 results.innerHTML += `
                 <div>
-                ${capitalize(entry.plannedCategories)}: ${entry.budget}
+                ${capitalize(entry.plannedCategories)}: ${entry.budget} €
                 </div>
                 `;
             });
@@ -149,7 +149,7 @@ function showResults() {
             groupedMonths.monitor.forEach(entry => {
                 results.innerHTML += `
                 <div>
-                ${capitalize(entry.actualCategories)}: ${entry.expense}
+                ${capitalize(entry.actualCategories)}: ${entry.expense} €
                 </div>
                 `;
             });

@@ -468,7 +468,7 @@ budgetForm.addEventListener('submit', async (e) => {
         console.log('Submitted successfully. Demo ID: ' + data.id);
         console.log('Submitted Data:', payload);
     } catch (error) {
-        console.log('Network error occurred. Please try again.');
+        alert('Network error occurred. Please try again.');
         console.error('Submission Error:', error);
     }
     // Show results below the form, show button to clear history
@@ -516,7 +516,7 @@ monitorForm.addEventListener('submit', async (e) => {
             body: JSON.stringify(payload)
         });
         const data = await response.json();
-        alert('Submitted successfully. Demo ID: ' + data.id);
+        console.log('Submitted successfully. Demo ID: ' + data.id);
         console.log('Submitted Data:', payload);
     } catch (error) {
         alert('Network error occurred. Please try again.');

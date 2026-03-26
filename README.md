@@ -14,6 +14,7 @@ A tool to plan and monitor personal budget. You can add budgetet incomes, budget
 6. Click save to submit
 7. See the summary of the results below
 8. Repeat the process to see the results for multiple categories, different months and summaries for Budget Plan / Actual for each month
+9. In case of errors / wanting to start again, "Clear" -buttons clear the form and "Clear History" -button clears and erases the result history
 
 **Visuals**
 

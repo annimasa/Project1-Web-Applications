@@ -4,6 +4,10 @@
 
 A tool to plan and monitor personal budget. You can add budgetet incomes, budgets per category and actual incomes and expenses. The Budget tracker shows a summary of the results per each month. 
 
+**Website link**
+
+https://annimasa.github.io/Project1-Web-Applications/
+
 **Step-by-step instructions:**
 
 1. Choose the right mode (Plan Budget / Monitor Budget) by clicking buttons
@@ -43,7 +47,7 @@ G. Demo video and Documentation on Git 4 pts -> Video might miss something but s
 I wanted to try to do a Budget Tracker for my project, since it is something I had thought I wanted to try to do before. It turned out to bee surprisingly challenging, since there are two different modes (Plan / Monitor).
 All the functions and features had to be done so that both of the modes work, which meant that I needed to get the program to recognize different entry types. Some of the features, like switching the mode and hiding the 
 inactive mode and especially getting the results to show correctly (grouped per month, budget + actual results show under the same month group, income informations show only once per month, and all the categories from 
-the same month show below it from both modes). I needed to do quite a lot of research and many unsuccessful tries to get it work. There are still quite a few improvements that I could do: find out why the "clear history" -button disappears after refreshing the page, add a possibility to edit and remove the entries one by one (not just all history), a feature to calculate budgetet and actual savings, and a comparison calculations for planned / actual budget. I am still quite happy that I managed to get the features that already exist to work and to create quite clear and responsive layout. I also definitively learned a lot about JavaScript and building dynamic web applications. 
+the same month show below it from both modes). I needed to do quite a lot of research and many unsuccessful tries to get it work. There are still quite a few improvements that I could do: find out why the "clear history" -button disappears after refreshing the page, add a possibility to edit and remove the entries one by one (not just all history), a feature to calculate budgeted and actual savings, and a comparison calculations for planned / actual budget. I am still quite happy that I managed to get the features that already exist to work and to create quite clear and responsive layout. I also definitively learned a lot about JavaScript and building dynamic web applications. 
 
 
 **#Video timestamps**

@@ -28,13 +28,13 @@ A tool to plan and monitor personal budget. You can add budgetet incomes, budget
 
 **Self-Assessment**
 
-A. Core Functionality 8 pts -> Otherwise working but "Clear History button" disappears after refreshing the page and needs a new entry to show up again
-B. Code Quality and Architecture 4 pts -> Code is quite organized with comments and small functions, but there might be some duplication
-C. UX and Accessibility 5 pts -> Everything should be okay
-D. Data Handling and Persistence 3-4 pts -> Data is written to localStorage/JSON, validation is present, includes resilience
-E. Documentation 2 pts -> Documentation should be okay but some of it was a little late
-F. Deployment 3 pts -> Everything should be okay
-G. Demo video and Documentation on Git 4 pts -> Video might miss something but should be mostly clear
+A. Core Functionality 8 pts -> Otherwise working but "Clear History button" disappears after refreshing the page and needs a new entry to show up again\
+B. Code Quality and Architecture 4 pts -> Code is quite organized with comments and small functions, but there might be some duplication\
+C. UX and Accessibility 5 pts -> Everything should be okay\
+D. Data Handling and Persistence 3-4 pts -> Data is written to localStorage/JSON, validation is present, includes resilience\
+E. Documentation 2 pts -> Documentation should be okay but some of it was a little late\
+F. Deployment 3 pts -> Everything should be okay\
+G. Demo video and Documentation on Git 4 pts -> Video might miss something but should be mostly clear\
 --> Total 29/30 pts 
 
 **Reflection**
